@@ -1,0 +1,21 @@
+{
+  "name": "pi-pixso-skill",
+  "version": "1.0.11",
+  "private": true,
+  "description": "Pixso AI integration for pi: design-to-code, code-to-design, design editing, DSL inspection, and component parser config. Connects to the Pixso desktop MCP server.",
+  "keywords": [
+    "pi-package",
+    "pixso",
+    "design",
+    "mcp",
+    "ui",
+    "design-to-code",
+    "code-to-design"
+  ],
+  "license": "Apache-2.0",
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}
