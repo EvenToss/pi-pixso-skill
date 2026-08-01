@@ -17,7 +17,7 @@ function parseArgs(argv) {
 }
 
 const args = parseArgs(process.argv);
-const HOST = (args.host || 'http://localhost:3667').replace(/\/$/, '');
+const HOST = (args.host || 'http://127.0.0.1:3667').replace(/\/$/, '');
 const BATCH = args.batch;
 const NODES = (args.nodes || '').split(',').map((s) => s.trim()).filter(Boolean);
 const OUT_DIR = path.resolve(args['out-dir'] || '.');

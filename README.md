@@ -14,7 +14,7 @@
 2. 启动 Pixso MCP 服务，默认地址：
 
    ```text
-   http://localhost:3667/mcp
+   http://127.0.0.1:3667/mcp
    ```
 
 3. 安装 pi（[pi quickstart](https://github.com/badlogic/pi-mono)）。
@@ -61,7 +61,7 @@ pi update git:github.com/EvenToss/pi-pixso-skill   # 只更新本包
   "mcpServers": {
     "pixso": {
       "type": "http",
-      "url": "http://localhost:3667/mcp"
+      "url": "http://127.0.0.1:3667/mcp"
     }
   }
 }
@@ -146,7 +146,7 @@ Generate componentParsers for the current Pixso component library and Element Pl
 先确认 Pixso MCP 是否启动：
 
 ```bash
-curl -sS -I http://localhost:3667/mcp
+curl -sS -I http://127.0.0.1:3667/mcp
 ```
 
 请求失败时，先启动 Pixso Desktop 并确认 MCP 服务已开启；然后在 pi 中执行 `/mcp` 查看 `pixso` 状态，必要时 `/mcp reconnect pixso`。

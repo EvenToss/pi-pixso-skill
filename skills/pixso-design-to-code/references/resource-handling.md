@@ -35,7 +35,7 @@ The script only fetches code, downloads assets, and replaces URLs. It does not p
 
 ```bash
 node references/resource-fetch.mjs \
-  --host http://localhost:3667 \
+  --host http://127.0.0.1:3667 \
   --batch 1782715248952 \
   --nodes 144:2200 \
   --out-dir ./miniprogram \
